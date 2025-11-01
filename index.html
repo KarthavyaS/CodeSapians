@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Document Vault — Sign in</title>
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <main class="auth-wrap">
+    <div class="auth-card glass">
+      <header class="auth-head">
+        <img src="assets/box-svgrepo-com.svg" alt="DV logo" class="logo" />
+        <div class="title">
+          <h1>C1TADEL</h1>
+          <p class="sub">Securely store and organize documents</p>
+        </div>
+
+        <div class="theme-area">
+          <label class="theme-toggle">
+            <input type="checkbox" class="theme-switch" />
+            <span class="toggle"></span>
+          </label>
+        </div>
+      </header>
+
+      <section class="auth-body">
+        <div id="login-panel" class="panel">
+          <label class="field">
+            <span>Email</span>
+            <input id="login-email" type="email" placeholder="you@example.com" />
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input id="login-password" type="password" placeholder="••••••••" />
+          </label>
+          <div class="row">
+            <button id="login-btn" class="btn primary">Sign in</button>
+            <button id="show-signup" class="btn ghost">Create</button>
+          </div>
+          <div class="tip muted">This demo stores data locally in your browser.</div>
+        </div>
+
+        <div id="signup-panel" class="panel hidden">
+          <label class="field">
+            <span>Full name</span>
+            <input id="signup-name" type="text" placeholder="Your name" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input id="signup-email" type="email" placeholder="you@example.com" />
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input id="signup-password" type="password" placeholder="At least 8 characters" />
+          </label>
+          <div class="row">
+            <button id="signup-btn" class="btn primary">Create account</button>
+            <button id="show-login" class="btn ghost">Back to sign in</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

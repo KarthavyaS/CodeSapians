@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Document Vault — Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <!-- APP WRAPPER -->
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar glass">
+      <div class="brand">
+        <img src="assets/box-svgrepo-com.svg" class="logo-small" alt="logo"/>
+        <h2>C1tadel <span id="enteredName"></span></h2>
+        <div>
+          <div class="brand-sub muted" id="user-email"></div>
+        </div>
+      </div>
+
+      <div class="sidebar-actions">
+        <button id="new-folder" class="btn primary small">+ New Folder</button>
+        <button id="upload-btn" class="btn ghost small">Upload</button>
+      </div>
+
+      <nav class="folders" id="folders-list" aria-label="Folders">
+        <!-- folders populated here -->
+      </nav>
+
+      <div class="sidebar-foot">
+        <button id="trash-btn" class="btn ghost small">Trash</button>
+        <button id="logout" class="btn ghost small">Logout</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="topbar glass">
+        <div class="left">
+          <button id="collapse-sidebar" class="icon-btn" title="Toggle sidebar">☰</button>
+          <h1 id="folder-title">All Documents</h1>
+          <span class="pill" id="count-pill">0 items</span>
+        </div>
+
+        <div class="right">
+          <div class="search-wrap glass">
+            <input id="search" placeholder="Search files or notes..." />
+            <button id="open-notes" class="icon-btn" title="Open notes panel">📝</button>
+          </div>
+
+          <label class="theme-toggle top">
+            <input type="checkbox" class="theme-switch" />
+            <span class="toggle"></span>
+          </label>
+
+          <button id="new-file-floating" class="fab" title="Upload file">＋</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div id="grid" class="grid">
+          <!-- file cards -->
+        </div>
+      </section>
+    </main>
+
+    <!-- NOTES PANEL (slide-in) -->
+    <aside id="notes-panel" class="notes-panel">
+      <header>
+        <h3>Notes</h3>
+        <button id="close-notes" class="icon-btn">✕</button>
+      </header>
+      <div class="notes-body">
+        <div id="notes-item-info" class="muted"></div>
+        <textarea id="notes-text" placeholder="Write notes here..."></textarea>
+        <div class="notes-actions">
+          <button id="save-notes" class="btn primary">Save</button>
+          <button id="delete-notes" class="btn ghost">Delete</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MODALS -->
+    <div id="modal-root"></div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
