@@ -55,3 +55,12 @@ The layout is responsive, ensuring it adapts beautifully to desktops, tablets, a
 
 ## Deployed Link
   This project is deployed on [Vercel](https://code-sapians-eb4k9rtm3-karthavyas2024cse-5507s-projects.vercel.app/)
+
+## 👥 Team Members
+
+This project was developed collaboratively by our team:
+
+- [**Karthavya S (Team Lead)**](https://github.com/KarthavyaS)  
+- [**Jaiharish D**](https://github.com/)  
+- [**Keerthana C**](https://github.com/)  
+
