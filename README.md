@@ -60,7 +60,7 @@ The layout is responsive, ensuring it adapts beautifully to desktops, tablets, a
 
 This project was developed collaboratively by our team:
 
-- [**Karthavya S (Team Lead)**](https://github.com/KarthavyaS)  
+- [**Karthavya S**](https://github.com/KarthavyaS)  (Team Lead)
 - [**Jaiharish D**](https://github.com/)  
 - [**Keerthana C**](https://github.com/)  
 
