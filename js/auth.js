@@ -1,4 +1,4 @@
-// auth.js (updated)
+// auth.js
 document.addEventListener('DOMContentLoaded', () => {
   const loginPanel = document.getElementById('login-panel');
   const signupPanel = document.getElementById('signup-panel');
@@ -21,10 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginHint = createHintElement(loginEmail, 'login-hint');
   const signupHint = createHintElement(signupEmail, 'signup-hint');
 
-  // email validator:
-  // - starts with a letter
-  // - contains @ and .
-  // - ends with a TLD (letters, min 2)
+  // email validator: (example-youremail@gmail.com)
   const emailRegex = /^[A-Za-z][A-Za-z0-9._%+-]*@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
   function validateEmailField(inputEl, hintEl, btnToControl){
