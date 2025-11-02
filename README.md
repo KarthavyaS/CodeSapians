@@ -74,30 +74,37 @@ cd document-vault
 ---
 
 ## 🏗️ Architecture
+
 Document-Vault/
--├── index.html              # Login / Register page
--├── dashboard.html          # Main dashboard
--├── css/
--│   ├── style.css           # Global styles
--│   ├── dashboard.css       # Dashboard UI
--│   └── themes.css          # Theme toggling
--├── js/
--│   ├── auth.js             # Login/Signup logic
--│   ├── dashboard.js        # File/Folder management
--│   ├── storage.js          # LocalStorage utilities
--│   ├── theme.js            # Theme switching
--│   └── utils.js            # Helpers
--├── assets/
--│   ├── icons/
--│   └── images/
--└── README.md
+├── index.html              # Login / Register page
+├── dashboard.html          # Main dashboard
+├── css/
+│   ├── style.css           # Global styles
+│   ├── dashboard.css       # Dashboard UI
+│   └── themes.css          # Theme toggling
+├── js/
+│   ├── auth.js             # Login/Signup logic
+│   ├── dashboard.js        # File/Folder management
+│   ├── storage.js          # LocalStorage utilities
+│   ├── theme.js            # Theme switching
+│   └── utils.js            # Helpers
+├── assets/
+│   ├── icons/
+│   └── images/
+└── README.md
+
+
+---
 
 ## 📈 Performance & Security
+
 -Metric	Before	After	Improvement
 -File Access Time	1–2s	<100ms	90% faster
 -Offline Availability	❌	✅ Full	Improved
 -Security	Basic	Encrypted (planned)	Upcoming
 -UI Responsiveness	Average	Fully Adaptive	✅
+
+---
 
 ### Highlights:
 
@@ -108,6 +115,8 @@ Document-Vault/
 -Instant file retrieval
 
 -Optimized animations
+
+---
 
 ## 🔧 Troubleshooting
 1. Files not saving
@@ -124,6 +133,8 @@ Fix: Hard refresh (Ctrl + F5).
 
 Cause: Corrupted localStorage
 Fix: Clear app data or re-register.
+
+---
 
 ## 📚 Additional Resources
 
