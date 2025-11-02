@@ -1,4 +1,4 @@
-// dashboard.js (updated: counts, lock icons, folder notes, file rename)
+// dashboard.js
 document.addEventListener('DOMContentLoaded', async () => {
   const email = getSession();
   if(!email) { window.location.href = 'index.html'; return; }
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById("enteredName").textContent = username;
 
 
-  // topbar lock indicator (we add it dynamically to avoid editing HTML)
+  // topbar lock indicator
   let folderLockIndicator = document.getElementById('folder-lock-indicator');
   if(!folderLockIndicator){
     folderLockIndicator = document.createElement('span');
@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function save(){ backend.saveDataLocal(email, data); }
   function findFolder(id){ return data.folders.find(f=>f.id===id) }
   function findFile(id){ return data.files.find(f=>f.id===id) }
-
-  // compute counts per folder and store temporarily
+  
   function computeFolderCounts(){
     const counts = {};
     data.folders.forEach(f=> counts[f.id]=0);
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     return counts;
   }
 
-  // render folders with lock icon, count, notes button
+  // added folders with lock icon, count, notes button
   function renderFolders(){
     foldersList.innerHTML = '';
     const counts = computeFolderCounts();
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       foldersList.appendChild(el);
     });
 
-    // when a folder is active, update topbar count for it too (already handled in renderGrid)
+    // when a folder is active, update topbar count
   }
 
   // render grid of files with rename
@@ -132,7 +131,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // rename file inline
+  // rename file
   function renameFileInline(file, cardEl){
     const fnameEl = cardEl.querySelector('.fname');
     const current = file.name;
@@ -141,7 +140,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     input.value = current;
     fnameEl.replaceWith(input);
     input.focus();
-    // save on enter or blur
+    // save on enter
     function saveName(){
       const v = input.value.trim();
       if(!v) { alert('Name cannot be empty'); input.focus(); return; }
@@ -227,7 +226,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else openNotes(folder);
   }
 
-  // rename folder -> small modal used earlier; kept same
+  // rename folder
 
   // toggle protect folder
   async function toggleProtectFolder(folder){
@@ -281,7 +280,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // open file (with check)
+  // open file with password
   async function openFile(file){
     if(file.important){
       const ok = await askPassword(file);
