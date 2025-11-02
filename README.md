@@ -1,4 +1,4 @@
-# 🏰 C1tadel — Document Vault 🔐
+# 🏰 C1TADEL — Document Vault 🔐
 
 A secure and intuitive document management web app for organizing, protecting, and accessing files anytime, anywhere.  
 It features **authentication**, **folder management**, **password protection**, **notes**, and a **modern blue-and-white glass UI** with theme toggle — currently powered by **localStorage**, with plans for backend integration soon.
@@ -75,6 +75,7 @@ cd document-vault
 
 ## 🏗️ Architecture
 
+```text
 Document-Vault/
 ├── index.html # Login / Register page
 ├── dashboard.html # Main dashboard
@@ -92,6 +93,7 @@ Document-Vault/
 │ ├── icons/
 │ └── images/
 └── README.md
+```
 
 ---
 
