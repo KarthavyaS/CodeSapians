@@ -71,60 +71,45 @@ git clone https://github.com/yourusername/document-vault.git
 cd document-vault
 ```
 
-##🏗️ Architecture
+---
+
+## 🏗️ Architecture
 Document-Vault/
-├── index.html              # Login / Register page
-├── dashboard.html          # Main dashboard
-├── css/
-│   ├── style.css           # Global styles
-│   ├── dashboard.css       # Dashboard UI
-│   └── themes.css          # Theme toggling
-├── js/
-│   ├── auth.js             # Login/Signup logic
-│   ├── dashboard.js        # File/Folder management
-│   ├── storage.js          # LocalStorage utilities
-│   ├── theme.js            # Theme switching
-│   └── utils.js            # Helpers
-├── assets/
-│   ├── icons/
-│   └── images/
-└── README.md
-Document-Vault/
-├── index.html              # Login / Register page
-├── dashboard.html          # Main dashboard
-├── css/
-│   ├── style.css           # Global styles
-│   ├── dashboard.css       # Dashboard UI
-│   └── themes.css          # Theme toggling
-├── js/
-│   ├── auth.js             # Login/Signup logic
-│   ├── dashboard.js        # File/Folder management
-│   ├── storage.js          # LocalStorage utilities
-│   ├── theme.js            # Theme switching
-│   └── utils.js            # Helpers
-├── assets/
-│   ├── icons/
-│   └── images/
-└── README.md
+-├── index.html              # Login / Register page
+-├── dashboard.html          # Main dashboard
+-├── css/
+-│   ├── style.css           # Global styles
+-│   ├── dashboard.css       # Dashboard UI
+-│   └── themes.css          # Theme toggling
+-├── js/
+-│   ├── auth.js             # Login/Signup logic
+-│   ├── dashboard.js        # File/Folder management
+-│   ├── storage.js          # LocalStorage utilities
+-│   ├── theme.js            # Theme switching
+-│   └── utils.js            # Helpers
+-├── assets/
+-│   ├── icons/
+-│   └── images/
+-└── README.md
 
-##📈 Performance & Security
-Metric	Before	After	Improvement
-File Access Time	1–2s	<100ms	90% faster
-Offline Availability	❌	✅ Full	Improved
-Security	Basic	Encrypted (planned)	Upcoming
-UI Responsiveness	Average	Fully Adaptive	✅
+## 📈 Performance & Security
+-Metric	Before	After	Improvement
+-File Access Time	1–2s	<100ms	90% faster
+-Offline Availability	❌	✅ Full	Improved
+-Security	Basic	Encrypted (planned)	Upcoming
+-UI Responsiveness	Average	Fully Adaptive	✅
 
-Highlights:
+### Highlights:
 
-Cached local data
+-Cached local data
 
-Password-protected access
+-Password-protected access
 
-Instant file retrieval
+-Instant file retrieval
 
-Optimized animations
+-Optimized animations
 
-##🔧 Troubleshooting
+## 🔧 Troubleshooting
 1. Files not saving
 
 Cause: Browser storage full
@@ -140,7 +125,7 @@ Fix: Hard refresh (Ctrl + F5).
 Cause: Corrupted localStorage
 Fix: Clear app data or re-register.
 
-##📚 Additional Resources
+## 📚 Additional Resources
 
 theme.js → UI Theme Handler
 
