@@ -76,23 +76,22 @@ cd document-vault
 ## 🏗️ Architecture
 
 Document-Vault/
-├── index.html              # Login / Register page
-├── dashboard.html          # Main dashboard
+├── index.html # Login / Register page
+├── dashboard.html # Main dashboard
 ├── css/
-│   ├── style.css           # Global styles
-│   ├── dashboard.css       # Dashboard UI
-│   └── themes.css          # Theme toggling
+│ ├── style.css # Global styles
+│ ├── dashboard.css # Dashboard UI
+│ └── themes.css # Theme toggling
 ├── js/
-│   ├── auth.js             # Login/Signup logic
-│   ├── dashboard.js        # File/Folder management
-│   ├── storage.js          # LocalStorage utilities
-│   ├── theme.js            # Theme switching
-│   └── utils.js            # Helpers
+│ ├── auth.js # Login/Signup logic
+│ ├── dashboard.js # File/Folder management
+│ ├── storage.js # LocalStorage utilities
+│ ├── theme.js # Theme switching
+│ └── utils.js # Helpers
 ├── assets/
-│   ├── icons/
-│   └── images/
+│ ├── icons/
+│ └── images/
 └── README.md
-
 
 ---
 
@@ -143,6 +142,8 @@ theme.js → UI Theme Handler
 storage.js → Data Structure & LocalStorage Model
 
 Future Roadmap: Backend integration + Cloud sync
+
+---
 
 🎉 Built with dedication and precision for privacy-focused users.
 Welcome to your personal vault — C1tadel | Document Vault 🏰📂
