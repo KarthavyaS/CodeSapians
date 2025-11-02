@@ -3,7 +3,6 @@
    - Abstracted functions to make swapping to a backend simple later.
 */
 
-// ---------- Crypto ----------
 async function hashPassword(pw) {
   if (!pw) return null;
   const enc = new TextEncoder();
@@ -11,7 +10,7 @@ async function hashPassword(pw) {
   return Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2, "0")).join("");
 }
 
-// ---------- Session & user storage (local) ----------
+// Session & user storage (local)
 const USERS_KEY = 'dv_users_v1';
 const SESSION_KEY = 'dv_session_v1';
 
@@ -31,7 +30,7 @@ function clearSession(){
   localStorage.removeItem(SESSION_KEY);
 }
 
-// ---------- Data per-user ----------
+// Data per-user 
 function dataKey(email){ return `dv_data_${email}_v1` }
 function loadUserDataLocal(email){
   return JSON.parse(localStorage.getItem(dataKey(email)) || JSON.stringify({
@@ -47,10 +46,8 @@ function saveUserDataLocal(email, data){
   localStorage.setItem(dataKey(email), JSON.stringify(data));
 }
 
-// ---------- Abstraction for future backend ----------
+// Abstraction for future backend
 /* Replace these with fetch calls to your API when backend exists:
-   Example:
-     async function apiCreateFolder(folder){ return fetch('/api/folders', ...); }
 */
 const backend = {
   // auth
