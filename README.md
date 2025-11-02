@@ -42,7 +42,7 @@ The layout is responsive, ensuring it adapts beautifully to desktops, tablets, a
 | Frontend | HTML, CSS, JavaScript |
 | Styling | Custom CSS (Glassmorphism) |
 | Data Storage | LocalStorage |
-| Deployment | Vercel / Netlify |
+| Deployment | Vercel |
 
 ---
 
